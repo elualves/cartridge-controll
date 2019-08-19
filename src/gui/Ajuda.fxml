@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox prefHeight="168.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+   <children>
+      <Label text="Informações sobre o sistema:" textFill="#f00707">
+         <padding>
+            <Insets left="20.0" top="10.0" />
+         </padding>
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label text="Informação 1">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </Label>
+      <Label text="Informação 2">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </Label>
+      <Label text="Informação 3">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </Label>
+      <Label text="Informação 4">
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </Label>
+   </children>
+</VBox>
