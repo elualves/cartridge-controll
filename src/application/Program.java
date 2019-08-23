@@ -10,7 +10,7 @@ public class Program {
 		CartuchoDao cartuchoDao = DaoFactory.createCartuchoDao();
 		Cartucho cartucho = cartuchoDao.findById(1);
 		
-		System.out.println(cartucho);
+		System.out.println(cartucho );
 
 	}
 
