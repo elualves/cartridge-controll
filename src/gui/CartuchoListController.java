@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 import application.Main;
+import gui.listeners.DataChangeListener;
 import gui.util.Alerts;
 import gui.util.Utils;
 import javafx.collections.FXCollections;
@@ -26,7 +27,7 @@ import javafx.stage.Stage;
 import model.entities.Cartucho;
 import model.services.CartuchoService;
 
-public class CartuchoListController implements Initializable {
+public class CartuchoListController implements Initializable, DataChangeListener {
 
 	private CartuchoService service;
 	
@@ -52,7 +53,7 @@ public class CartuchoListController implements Initializable {
 	private TableColumn<Cartucho, String> tableColumnRetiradaNome;/*6*/
 
 	@FXML
-	private TableColumn<Cartucho, String> tableColumnMarca;/*7*/
+	private TableColumn<Cartucho, String> tableColumnMarca ;/*7*/
 
 	@FXML
 	private TableColumn<Cartucho, String> tableColumnModelo;/*8*/
@@ -142,6 +143,12 @@ public class CartuchoListController implements Initializable {
 		catch(IOException e) {
 			Alerts.showAlerts("IO Exception", "Error loading view", e.getMessage(), AlertType.ERROR);
 		}
+	}
+
+	@Override
+	public void onDataChanged() {
+		// TODO Auto-generated method stub
+		
 	}
 }
 
